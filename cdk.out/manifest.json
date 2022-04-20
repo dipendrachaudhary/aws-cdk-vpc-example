@@ -1,0 +1,1061 @@
+{
+  "version": "9.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "test-vpc-cdk-stack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://885300287765/us-east-1",
+      "properties": {
+        "templateFile": "test-vpc-cdk-stack.template.json"
+      },
+      "metadata": {
+        "/test-vpc-cdk-stack/my-cdk-vpc/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpc037DA4AF",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1215:21)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet1Subnet2AC575F3",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet1RouteTable177610F7",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet1RouteTableAssociation77852D9C",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet1DefaultRoute59820BDE",
+            "trace": [
+              "PrivateSubnet.addRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet2Subnet31DF6881",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet2RouteTableACCA9D4B",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet2RouteTableAssociation23019B28",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet2DefaultRouteBBC0D191",
+            "trace": [
+              "PrivateSubnet.addRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet3Subnet59A74060",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet3RouteTableC7B42A9E",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet3RouteTableAssociation63708403",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PrivateSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1802:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1400:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcprivatesubnet1Subnet3DefaultRouteE518E8A6",
+            "trace": [
+              "PrivateSubnet.addRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1635:19)",
+              "NatGatewayProvider.configureSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:245:12)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:238:12)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1Subnet8383DBBA",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1RouteTableE1ABF705",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1RouteTableAssociation160A4CBB",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1DefaultRoute1255C1C4",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1EIPA046231A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1776:21)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet1NATGatewayA2DD765A",
+            "trace": [
+              "PublicSubnet.addNatGateway (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1774:17)",
+              "NatGatewayProvider.configureNat (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:228:27)",
+              "Vpc.createNatGateways (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1347:14)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1269:14)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet2SubnetE104EC20",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet2RouteTable3099F008",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet2RouteTableAssociation2ECC1C4A",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet2DefaultRoute98E2F656",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet3Subnet0A0916F8",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1549:20)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet3RouteTableF66E029F",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1567:19)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet3RouteTableAssociation8CC3E8C8",
+            "trace": [
+              "new Subnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1573:5)",
+              "new PublicSubnet (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1764:5)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1395:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1377:28)",
+              "Vpc.createSubnets (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1366:12)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1244:10)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcpublicsubnet1Subnet3DefaultRouteD14D6107",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1589:19)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1263:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1262:46)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcIGW4220D5A9",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1251:19)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/my-cdk-vpc/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "mycdkvpcVPCGW2444B783",
+            "trace": [
+              "new Vpc (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1257:19)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:11:17)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/MyCustomLogGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCustomLogGroup7B70031C",
+            "trace": [
+              "new LogGroup (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-logs/lib/log-group.ts:373:22)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:70:22)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/flow-log-role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "flowlogrole97E07705",
+            "trace": [
+              "new Role (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:326:18)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:74:29)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/flow-log-role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "flowlogroleDefaultPolicy50B2239C",
+            "trace": [
+              "new Policy (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-iam/lib/role.ts:367:28)",
+              "CloudWatchLogsDestination.bind (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc-flow-logs.ts:240:13)",
+              "new FlowLog (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc-flow-logs.ts:378:43)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:78:5)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/FlowLog/FlowLog": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "FlowLog3CB084E9",
+            "trace": [
+              "new FlowLog (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/aws-ec2/lib/vpc-flow-logs.ts:389:21)",
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:78:5)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/vpcId": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "vpcId",
+            "trace": [
+              "new CdkStarterStack (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/lib/cdk-starter-stack.ts:83:5)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/bin/cdk-starter.ts:6:1)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Module.m._compile (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Object.require.extensions.<computed> [as .ts] (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "main (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (node:internal/modules/cjs/loader:1099:14)",
+              "Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)",
+              "Module.load (node:internal/modules/cjs/loader:975:32)",
+              "Function.Module._load (node:internal/modules/cjs/loader:822:12)",
+              "Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)",
+              "node:internal/main/run_main_module:17:47"
+            ]
+          }
+        ],
+        "/test-vpc-cdk-stack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:201:5)",
+              "visit (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:197:5)",
+              "injectMetadataResources (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/stage.ts:180:23)",
+              "process.<anonymous> (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/@aws-cdk/core/lib/app.ts:123:45)",
+              "Object.onceWrapper (node:events:642:26)",
+              "process.emit (node:events:539:35)",
+              "process.emit (node:domain:475:12)",
+              "process.emit (/home/dipendra/DevOps/cdk/new/aws-cdk-vpc-example/node_modules/source-map-support/source-map-support.js:495:21)"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

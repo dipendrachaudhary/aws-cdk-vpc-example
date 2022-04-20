@@ -1,0 +1,655 @@
+{
+  "Resources": {
+    "mycdkvpc037DA4AF": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/Resource"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet1Subnet2AC575F3": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1a",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/Subnet"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet1RouteTable177610F7": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/RouteTable"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet1RouteTableAssociation77852D9C": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet1RouteTable177610F7"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet1Subnet2AC575F3"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet1DefaultRoute59820BDE": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet1RouteTable177610F7"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1NATGatewayA2DD765A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet1/DefaultRoute"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet2Subnet31DF6881": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.1.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1b",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1b"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/Subnet"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet2RouteTableACCA9D4B": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1b"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/RouteTable"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet2RouteTableAssociation23019B28": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet2RouteTableACCA9D4B"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet2Subnet31DF6881"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet2DefaultRouteBBC0D191": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet2RouteTableACCA9D4B"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1NATGatewayA2DD765A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet2/DefaultRoute"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet3Subnet59A74060": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.2.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1c",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1c"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/Subnet"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet3RouteTableC7B42A9E": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-private-subnet-1-us-east-1c"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/RouteTable"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet3RouteTableAssociation63708403": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet3RouteTableC7B42A9E"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet3Subnet59A74060"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcprivatesubnet1Subnet3DefaultRouteE518E8A6": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcprivatesubnet1Subnet3RouteTableC7B42A9E"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1NATGatewayA2DD765A"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/private-subnet-1Subnet3/DefaultRoute"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1Subnet8383DBBA": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.3.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1a",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/Subnet"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1RouteTableE1ABF705": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/RouteTable"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1RouteTableAssociation160A4CBB": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1RouteTableE1ABF705"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1Subnet8383DBBA"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1DefaultRoute1255C1C4": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1RouteTableE1ABF705"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "mycdkvpcIGW4220D5A9"
+        }
+      },
+      "DependsOn": [
+        "mycdkvpcVPCGW2444B783"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/DefaultRoute"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1EIPA046231A": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/EIP"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet1NATGatewayA2DD765A": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "mycdkvpcpublicsubnet1Subnet1EIPA046231A",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet1Subnet8383DBBA"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1a"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet1/NATGateway"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet2SubnetE104EC20": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.4.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1b",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1b"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/Subnet"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet2RouteTable3099F008": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1b"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/RouteTable"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet2RouteTableAssociation2ECC1C4A": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet2RouteTable3099F008"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet2SubnetE104EC20"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet2DefaultRoute98E2F656": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet2RouteTable3099F008"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "mycdkvpcIGW4220D5A9"
+        }
+      },
+      "DependsOn": [
+        "mycdkvpcVPCGW2444B783"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet2/DefaultRoute"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet3Subnet0A0916F8": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "CidrBlock": "10.0.5.0/24",
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "AvailabilityZone": "us-east-1c",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public-subnet-1"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1c"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/Subnet"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet3RouteTableF66E029F": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc-public-subnet-1-us-east-1c"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/RouteTable"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet3RouteTableAssociation8CC3E8C8": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet3RouteTableF66E029F"
+        },
+        "SubnetId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet3Subnet0A0916F8"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/RouteTableAssociation"
+      }
+    },
+    "mycdkvpcpublicsubnet1Subnet3DefaultRouteD14D6107": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "mycdkvpcpublicsubnet1Subnet3RouteTableF66E029F"
+        },
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "mycdkvpcIGW4220D5A9"
+        }
+      },
+      "DependsOn": [
+        "mycdkvpcVPCGW2444B783"
+      ],
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/public-subnet-1Subnet3/DefaultRoute"
+      }
+    },
+    "mycdkvpcIGW4220D5A9": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "my-cdk-vpc"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/IGW"
+      }
+    },
+    "mycdkvpcVPCGW2444B783": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "VpcId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "InternetGatewayId": {
+          "Ref": "mycdkvpcIGW4220D5A9"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/my-cdk-vpc/VPCGW"
+      }
+    },
+    "MyCustomLogGroup7B70031C": {
+      "Type": "AWS::Logs::LogGroup",
+      "Properties": {
+        "RetentionInDays": 90
+      },
+      "UpdateReplacePolicy": "Retain",
+      "DeletionPolicy": "Retain",
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/MyCustomLogGroup/Resource"
+      }
+    },
+    "flowlogrole97E07705": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "vpc-flow-logs.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/flow-log-role/Resource"
+      }
+    },
+    "flowlogroleDefaultPolicy50B2239C": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "logs:CreateLogStream",
+                "logs:PutLogEvents",
+                "logs:DescribeLogStreams"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "MyCustomLogGroup7B70031C",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": "iam:PassRole",
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::GetAtt": [
+                  "flowlogrole97E07705",
+                  "Arn"
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "flowlogroleDefaultPolicy50B2239C",
+        "Roles": [
+          {
+            "Ref": "flowlogrole97E07705"
+          }
+        ]
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/flow-log-role/DefaultPolicy/Resource"
+      }
+    },
+    "FlowLog3CB084E9": {
+      "Type": "AWS::EC2::FlowLog",
+      "Properties": {
+        "ResourceId": {
+          "Ref": "mycdkvpc037DA4AF"
+        },
+        "ResourceType": "VPC",
+        "TrafficType": "ALL",
+        "DeliverLogsPermissionArn": {
+          "Fn::GetAtt": [
+            "flowlogrole97E07705",
+            "Arn"
+          ]
+        },
+        "LogDestinationType": "cloud-watch-logs",
+        "LogGroupName": {
+          "Ref": "MyCustomLogGroup7B70031C"
+        }
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/FlowLog/FlowLog"
+      }
+    },
+    "CDKMetadata": {
+      "Type": "AWS::CDK::Metadata",
+      "Properties": {
+        "Analytics": "v2:deflate64:H4sIAAAAAAAAA01PQW7DIBB8S+6EhF5ybWS1UaSqRU6VOybblMRmLVhiVYi/F+yk7mlmZ4bdQXCxFny9eFaDX+rTdRU1OuDxQEpfWQ0eg9PAqi/7EagPxCq0nlzQVLSHn1h5HkE/8XjsdbGOsmLSmZsiOITGwpifWY2B4FM1Lcz6rG29R20UGbR/YSZD0xo9r3jZywLvinb5yKB+yrS3BC4H/km5yX3aUv7VdweW2GuLwxuei3+nibV49jxmunMY+mI9eGJGdTzWONUdUWJuMx6YWEqJWTwBv/jVTWz4hovFxRuzdMGS6YDXE/4C57AjznIBAAA="
+      },
+      "Metadata": {
+        "aws:cdk:path": "test-vpc-cdk-stack/CDKMetadata/Default"
+      }
+    }
+  },
+  "Outputs": {
+    "vpcId": {
+      "Description": "the ID of the VPC",
+      "Value": {
+        "Ref": "mycdkvpc037DA4AF"
+      }
+    }
+  }
+}
